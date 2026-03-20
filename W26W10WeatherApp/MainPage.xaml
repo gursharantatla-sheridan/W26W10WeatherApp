@@ -4,7 +4,7 @@
              x:Class="W26W10WeatherApp.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout x:Name="stack" BackgroundColor="{StaticResource Primary}">
+        <VerticalStackLayout x:Name="stack" BackgroundColor="{StaticResource Secondary}">
 
             <Label x:Name="CityLbl" 
                HorizontalOptions="Center" 
@@ -20,6 +20,12 @@
                HorizontalOptions="Center" 
                Margin="10" 
                FontSize="20"/>
+
+            <Image x:Name="WeatherImg"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   HorizontalOptions="Center"
+                   Margin="10" />
 
             <Button x:Name="GetWeatherBtn" 
                 Text="Get Weather" 
